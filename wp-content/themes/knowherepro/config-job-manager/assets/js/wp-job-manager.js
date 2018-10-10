@@ -1409,7 +1409,7 @@ if ( $('.kw-switch-toggle').length ) {
 			});
 		}
 if ( $('.kw-button-filter').length ) {
-		if ($window.width() < 650 || $window.height() < 650) {
+		if ($window.width() < 650) {
 	      		$body.toggleClass('kw-show-filters');
 				$('.search_location').hide();
 				$('.search_categories').hide();
@@ -1417,6 +1417,10 @@ if ( $('.kw-button-filter').length ) {
 				$('.search-radius-wrapper').hide();
 				$('.search_keywords').attr('style', 'width: 100% !important');
 
+	    } else {
+	    	$('#search_location').focus(function () {
+	    		$('#use_search_radius').prop( "checked", true );
+	    	});
 	    }
 			
 		$('.kw-button-filter').on($.knowhere.EVENT, function (e) {
