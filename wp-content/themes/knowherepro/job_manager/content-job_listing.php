@@ -63,7 +63,7 @@ $post_image_src = knowhere_get_post_image_src( $post->ID, $card_image );
 					
 				</div>
 
-				<ul class="kw-listing-card-meta">
+				<!--<ul class="kw-listing-card-meta">
 					<?php if ( ! is_wp_error( $terms ) && ( is_array( $terms ) || is_object( $terms ) ) ) { ?>
 						<?php $i = 0; ?>
 						<?php foreach ( $terms as $term ) {
@@ -86,7 +86,7 @@ $post_image_src = knowhere_get_post_image_src( $post->ID, $card_image );
 
 					<?php do_action('knowhere_listing_card_meta_end', $post) ?>
 
-				</ul><!--/ .kw-listing-card-meta-->
+				</ul>--><!--/ .kw-listing-card-meta-->
 
 			</div>
 
