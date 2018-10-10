@@ -4,7 +4,7 @@
  * KnowherePro Child Theme functions and definitions
  *
  */
-/*test de push en live 3*/
+/*test de push en live 4*/
 
 
 if ( !function_exists('knowherepro_child_enqueue_styles') ) {
