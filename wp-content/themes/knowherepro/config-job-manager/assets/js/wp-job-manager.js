@@ -200,6 +200,10 @@ window.wp = window.wp || {};
 			var max_radius = parseInt(knowhere_job_manager_localize.max_radius);
 			var default_radius = parseInt(knowhere_job_manager_localize.default_radius);
 
+			var min_radius = 0;
+			var max_radius = 200;
+			var default_radius = 100;
+
 			var radius_search_slider = function( default_radius ) {
 
 				$('#radius-range-slider').slider({
