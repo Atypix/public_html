@@ -1527,6 +1527,12 @@ h2.job_summary_title {
   color:#FF0000;
 }
 
+.showing_jobs > span{
+  display:none !important;
+}
+
+
+
 
 
 

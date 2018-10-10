@@ -1383,18 +1383,22 @@ if ( $('.kw-switch-toggle').length ) {
 	$(function () {
 
 		var $window = $(window), $body = $('body');
-
+		$('.kw-button-view-map > span').text ('Voir la carte');
+		$('.kw-button-view-cards> span').text ('Retour à la liste');
 		if ( $('#job_preview').length ) {
 			$body.addClass('single-job_listing single-job_listing_preview');
 			$window.trigger('pxg:refreshmap');
 			$window.trigger('debouncedresize');
 			$('#job_preview').css('opacity', 1);
+			
 		}
 		if ( $('.kw-button-view').length ) {
+
 			$('.kw-button-view').on( $.knowhere.EVENT, function (e) {
 				e.preventDefault();
 
 				$body.toggleClass('kw-show-map');
+
 
 				$('html, body').scrollTop(0);
 
@@ -1405,6 +1409,16 @@ if ( $('.kw-switch-toggle').length ) {
 			});
 		}
 if ( $('.kw-button-filter').length ) {
+		if ($window.width() < 650 || $window.height() < 650) {
+	      		$body.toggleClass('kw-show-filters');
+				$('.search_location').hide();
+				$('.search_categories').hide();
+				$('.kw-button-filter').hide();
+				$('.search-radius-wrapper').hide();
+				$('.search_keywords').attr('style', 'width: 100% !important');
+
+	    }
+			
 		$('.kw-button-filter').on($.knowhere.EVENT, function (e) {
 			e.preventDefault();
 
