@@ -873,7 +873,7 @@ if ( !function_exists('knowhere_job_single_related') ) {
 		<meta itemprop="priceCurrency" content="EUR"/>
 		<meta itemprop="price" content="<?php echo  get_post_meta( $post->ID, '_job_price_range_min', true ); ?>"/>
 		<meta itemprop="lowprice" content="<?php echo  get_post_meta( $post->ID, '_job_price_range_min', true ); ?>"/>
-		<meta itemprop="availability" content="In stock"/>
+		<meta itemprop="availability" content="http://schema.org/InStock"/>
 		<meta itemprop="offerCount" content="<?php echo  get_post_meta( $post->ID, '_nb_personnes_max', true ); ?>"/>
 		<meta itemprop="url" content="<?php echo  get_permalink(); ?>"/>
 		<meta itemprop="validFrom" content="<?php echo $startDate; ?>"/>
