@@ -19,7 +19,7 @@ if ( !function_exists('knowherepro_child_enqueue_styles') ) {
 			wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css', array( 'linearicons', 'animate', 'bootstrap', 'linear', 'fontawesome' ) );
 			wp_enqueue_style( 'knowhere-child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ) );
 			if (is_single()) {
-				wp_enqueue_script('scroll_mobile', './wp-content/themes/knowherepro-child/js/scroll_mobile.js?rand='.rand(0,100000000));
+				wp_enqueue_script('scroll_mobile', './wp-content/themes/knowherepro-child/js/scroll_mobile.js');
 			}
  			
 			if ( is_rtl() ) {
