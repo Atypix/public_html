@@ -92,7 +92,11 @@ get_header();
 
 	</div>
 	<?php
+
+	
 	if (!empty($startDate)) {
+		$id_product = get_post_meta ($post->ID, '_id_product', true);
+		if (get_post_status( $id_product ) == 'publish' ) {
 			$nb = get_post_meta( $post->ID, '_nb_personnes_max', true );
 			if ($nb > 1 ) {
 				$str = $nb." personnes";
@@ -102,14 +106,15 @@ get_header();
 	 ?>	
 	<div class="kw-box panier-mobile">
 		<p><img src="https://www.mylittlewe.com/wp-content/uploads/2018/07/rasurre_2.jpg" width="100%"></p>
-		
+		<div id="up-reserve"></div>
 		<h2 id="reservez">Réservez maintenant !</h2>
 
 		<?php 
 	$id_product = get_post_meta ($post->ID, '_id_product', true);
 	echo do_shortcode('[product_page  id="'.$id_product .'" ]'); 
-	?></div>
-	<?php } ?>
+	?><div id="down-reserve"></div></div>
+
+	<?php  } } ?>
 	<?php knowhere_job_single_details(); ?>
 	<?php 
 	$author = get_the_author(); 
@@ -220,7 +225,7 @@ $description_author = get_the_author_meta('description');
 
 	<?php knowhere_job_single_reviewer(); ?>
 
-
+	
 
 <?php endwhile; ?>
 

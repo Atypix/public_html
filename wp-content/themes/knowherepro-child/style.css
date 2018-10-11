@@ -1532,6 +1532,26 @@ h2.job_summary_title {
 }
 
 
+.reserve_btn_mobile {
+  
+  width:100%;
+  height:50px;
+  background-color:transparent;
+  /*border-top:1px solid #4F4F4F;*/
+  text-align:center;
+  padding:12px;
+  position:fixed;
+  bottom:-51px;
+
+  z-index: 999999; 
+  
+  overflow: hidden; 
+  display: block; 
+
+
+}
+
+
 
 
 

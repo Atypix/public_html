@@ -60,7 +60,7 @@ $page_content_classes = $knowhere_config['page_content_classes'];
 $style_page_header = $knowhere_config['job-single-style']; ?>
 
 <body <?php body_class(); ?>>
-
+<?php create_btn_reserve (); ?>
 <?php do_action('knowhere_body_append', get_the_ID()); ?>
 
 <div class="kw-wide-layout-type">

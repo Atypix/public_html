@@ -18,7 +18,10 @@ if ( !function_exists('knowherepro_child_enqueue_styles') ) {
 			$parent_style = 'knowhere-style';
 			wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css', array( 'linearicons', 'animate', 'bootstrap', 'linear', 'fontawesome' ) );
 			wp_enqueue_style( 'knowhere-child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ) );
- 			//wp_enqueue_script('price', 'https://www.mylittlewe.com/wp-content/themes/knowherepro-child/js/price.js');
+			if (is_single()) {
+				wp_enqueue_script('scroll_mobile', './wp-content/themes/knowherepro-child/js/scroll_mobile.js?rand='.rand(0,100000000));
+			}
+ 			
 			if ( is_rtl() ) {
 				wp_enqueue_style( 'knowherepro-child-style-rtl', get_stylesheet_directory_uri() . '/rtl.css' );
 			}
@@ -1642,6 +1645,12 @@ function ja_remove_hentry( $class ) {
 	return $class;
 }
 add_filter( 'post_class', 'ja_remove_hentry' );
+
+function create_btn_reserve () {
+	?>
+	<div class='reserve_btn_mobile'><a class='btn_mobile_down'style='background: #d13060 !important; color: #fff; font-weight: 500;   border-radius: 40px;padding:10px 40px 10px 40px'>Réserver</a></div>
+	<?php
+}
 
 
 
