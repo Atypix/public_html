@@ -94,7 +94,7 @@ get_header();
 	<?php
 
 	
-	if (!empty($startDate)) {
+	if (!empty($startDate)  && isMobile()) {
 		$id_product = get_post_meta ($post->ID, '_id_product', true);
 		if (get_post_status( $id_product ) == 'publish' ) {
 			$nb = get_post_meta( $post->ID, '_nb_personnes_max', true );

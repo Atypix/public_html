@@ -1566,7 +1566,7 @@ public function widget( $args, $instance ) {
 	}
 
 
-	if (!empty($startDate) && get_post_meta( $post->ID, '_job_price_range_min', true ) != "0" ) {
+	if (!empty($startDate) && get_post_meta( $post->ID, '_job_price_range_min', true ) != "0" && !isMobile()) {
 			$nb = get_post_meta( $post->ID, '_nb_personnes_max', true );
 			if ($nb > 1 ) {
 				$str = $nb." personnes";
@@ -1650,6 +1650,10 @@ function create_btn_reserve () {
 	?>
 	<div class='reserve_btn_mobile'><a class='btn_mobile_down'style='background: #d13060 !important; color: #fff; font-weight: 500;   border-radius: 40px;padding:10px 40px 10px 40px'>Réserver</a></div>
 	<?php
+}
+
+function isMobile() {
+    return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 }
 
 
