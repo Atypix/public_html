@@ -206,7 +206,7 @@ function synchronize_onebrain () {
 
 
     foreach ($events as $event) {
-        
+        $dtstart = $ical->iCalDateToDateTime($event->dtstart_array[3], $forceTimeZone);
         $a = [];
         $a['type'] = "time:range";
         $a['bookable'] = 'no';
@@ -218,6 +218,7 @@ function synchronize_onebrain () {
         $a["from_date"] = $dtstart->format('Y-m-d');
         $a["to_date"] = $dtstart->format('Y-m-d');
         $b = true;
+       
         foreach ($ahours as $hour) {
              if ($hour['type'] == 'time:range' && $hour['bookable'] == "no") {
                  if ($hour['from_date'] == $a["from_date"] && $a["from"] == $hour['from']) {
@@ -228,18 +229,17 @@ function synchronize_onebrain () {
 
         if ($b) {
             $ahours[] = $a;
+            
                             
         }
-                         
+                      
         
     }
 
     update_post_meta( 4917, '_wc_booking_availability', $ahours );
-    $arg = array(
-            'ID' => 4917
-    );
-        
-    wp_update_post( $arg );
+   
+    
+
 
 }
 

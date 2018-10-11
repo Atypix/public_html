@@ -220,6 +220,8 @@ $description_author = get_the_author_meta('description');
 
 	<?php knowhere_job_single_reviewer(); ?>
 
+
+
 <?php endwhile; ?>
 
 <?php get_footer(); ?>
@@ -229,7 +231,7 @@ $description_author = get_the_author_meta('description');
 <?php 
 global $wpdb;
 $count = 1; 
-synchronize_onebrain ();
+
 $wpdb->query(
 			$wpdb->prepare( "
 				INSERT INTO " . $wpdb->prefix . "knowhere_job_listing_post_views (id, type, period, count)
@@ -239,3 +241,5 @@ $wpdb->query(
 		); 
 
 		 ?>
+
+<?php synchronize_onebrain(); ?>
