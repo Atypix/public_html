@@ -21,3 +21,6 @@ github-sync.php
 /sitemap.xml
 /sitemap.xml.gz
 
+*.conf
+wp-content/db.php
+wp-content/object-cache.php
