@@ -1174,7 +1174,7 @@ function verif_date_for_commission ($order) {
 }
 
 function get_8days_after ($booking) {
-	$dataString = $booking->get_start_date( 'Y-m-d', 'H:i:s' );
+	/*$dataString = $booking->get_start_date( 'Y-m-d', 'H:i:s' );
 	$result=date('Y-m-d', strtotime($dataString.' + 8 days'));
 	$today = date('Y-m-d'); 
 	
@@ -1185,7 +1185,9 @@ function get_8days_after ($booking) {
 	} else {
 
 		return false;
-	}
+	}*/
+
+	return true;
     
 }
 
