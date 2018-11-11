@@ -88,7 +88,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 								printf('<a href="%s">%s</a>', esc_url($product_permalink), $thumbnail);
 							}
 							echo "</div>";
-							echo '<br/><br/><p></p>';
+							echo '<br/><br/>';
 							if (!$product_permalink) {
 								echo apply_filters('woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key) . '&nbsp;';
 							} else {
