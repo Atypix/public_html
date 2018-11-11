@@ -78,7 +78,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						<td class="product-name" data-title="<?php esc_html_e('Product', 'knowherepro'); ?>">
 							<?php
-							$thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
+							$string = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
+							$thumbnail = preg_replace('/\\<(.*?)(width="(.*?)")(.*?)(height="(.*?)")(.*?)\\>/i', '<$1$4$7>', $string);
+							
 							echo "<div width='150px'>";
 							if (!$product_permalink) {
 								echo $thumbnail;
