@@ -1199,7 +1199,9 @@ body .woocommerce-checkout table.shop_table td { text-align: right;
 
 .product-shipping-message { font-size: 16px; text-align: center; text-transform: uppercase; padding: 10px 0px; border-top: 1px solid #139248; border-bottom: 1px solid #139248; }
 
-
+body .woocommerce table.cart .product-thumbnail {
+  width:150px !important;
+}
 
 body .woocommerce form .form-row input.input-text, 
 body .woocommerce form .form-row textarea { max-width: 100%; }
