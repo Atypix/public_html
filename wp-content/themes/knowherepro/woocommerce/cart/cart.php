@@ -81,7 +81,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 							$string = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
 							$thumbnail = preg_replace('/\\<(.*?)(width="(.*?)")(.*?)(height="(.*?)")(.*?)\\>/i', '<$1$4$7>', $string);
 							
-							echo "<div width='150px'>";
+							echo "<div width='150'>";
 							if (!$product_permalink) {
 								echo $thumbnail;
 							} else {
