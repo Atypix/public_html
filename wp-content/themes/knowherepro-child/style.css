@@ -985,19 +985,19 @@ color:white!important;
 }
 
 #wc-bookings-booking-form .block-picker li a:hover {
-  background-color: #70af1a !important;
+  background-color: #f8a505 !important;
 }
 
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a {
-  background-color: #70af1a !important;
+  background-color: #f8a505 !important;
 }
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.ui-datepicker-current-day a {
-  background-color: #558613 !important; 
+  background-color: #ee7717 !important; 
 } 
 
 /* Available calendar day hover background color */
 #wc-bookings-booking-form .wc-bookings-date-picker .ui-datepicker td.bookable a:hover {
-  background-color: #558613 !important;
+  background-color: #ee7717 !important;
 }
 .wc-bookings-booking-form .wc-bookings-booking-cost {
   
@@ -1007,6 +1007,11 @@ color:white!important;
   font-size: 18px;
   color: #70af1a;
   font-weight: 700;
+}
+
+a.selected {
+  background-color:: #ee7717 !important;
+  color: #fff !important;
 }
 
 
@@ -1101,7 +1106,7 @@ body .woocommerce #respond input#submit.alt,
 body .woocommerce a.button.alt, 
 body .woocommerce button.button.alt, 
 body .woocommerce input.button.alt {
-  background: #d13060!important; 
+  background: #f8a505!important; 
   font-weight: 500;
 }
 
@@ -1109,7 +1114,7 @@ body .woocommerce #respond input#submit.alt:hover,
 body .woocommerce a.button.alt:hover, 
 body .woocommerce button.button.alt:hover, 
 body .woocommerce input.button.alt:hover {
-  background: #70af1a !important; 
+  background: #ee7717 !important; 
 }
 
 body .woocommerce .cart .button, 
@@ -1117,7 +1122,7 @@ body .woocommerce .cart input.button,
 body .woocommerce #respond input#submit, 
 body .woocommerce a.button, 
 body .woocommerce button.button, 
-body .woocommerce input.button { background: #d13060 !important; color: #fff; font-weight: 500;   border-radius: 40px; }
+body .woocommerce input.button { background: #f8a505 !important; color: #fff; font-weight: 500;   border-radius: 40px; }
 
 body .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
   float: right;
