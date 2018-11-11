@@ -602,8 +602,3 @@ function knowhere_wpcodex_add_excerpt_support_for_pages() {
 	add_post_type_support( 'page', 'excerpt' );
 }
 
-function my_custom_thumbnail_size( $thumbnail ) {
-    $thumbnail = 'medium';
-    return $thumbnail;
-}
-add_filter( 'wcgiftwrap_change_thumbnail', 'my_custom_thumbnail_size', 10, 1 );

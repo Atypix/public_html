@@ -79,13 +79,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 						<td class="product-name" data-title="<?php esc_html_e('Product', 'knowherepro'); ?>">
 							<?php
 							$thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
-
+							echo "<div width='150px'>";
 							if (!$product_permalink) {
 								echo $thumbnail;
 							} else {
 								printf('<a href="%s">%s</a>', esc_url($product_permalink), $thumbnail);
 							}
-
+							echo "</div>";
 							echo '<br/><br/><p></p>';
 							if (!$product_permalink) {
 								echo apply_filters('woocommerce_cart_item_name', $_product->get_name(), $cart_item, $cart_item_key) . '&nbsp;';
