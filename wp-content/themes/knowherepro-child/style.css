@@ -1285,6 +1285,10 @@ body .woocommerce .product-name a { color: #000; pointer-events: none; cursor: d
    margin-right:auto;
     
   }
+
+  .kw-loader {
+    top :75% !important;
+  }  
   .woocommerce-cart .entry-content form {
     width: 100%;
 
