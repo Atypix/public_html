@@ -1124,7 +1124,7 @@ body .woocommerce a.button,
 body .woocommerce button.button, 
 body .woocommerce input.button { background: #f8a505 !important; color: #fff; font-weight: 500;   border-radius: 40px; }
 
-body .woocommerce .cart .attachment-woocommerce_thumbnail {
+.attachment-woocommerce_thumbnail {
   width:100px !important;
 }
 
