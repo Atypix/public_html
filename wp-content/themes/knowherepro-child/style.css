@@ -1208,6 +1208,14 @@ body .woocommerce form .form-row textarea { max-width: 100%; }
 
 body .woocommerce .product-name a { color: #000; pointer-events: none; cursor: default; }
 
+
+.woocommerce .cart .product-name .variation dt,
+.woocommerce-page .cart .product-name .variation dt {
+    float: left;
+    margin-right: 5px;
+    display: block;
+}
+
 #product-4786 {
 
  background-color: white !important;
