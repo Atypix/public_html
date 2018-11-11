@@ -1214,6 +1214,7 @@ body .woocommerce .product-name a { color: #000; pointer-events: none; cursor: d
     float: left;
     margin-right: 5px;
     display: block;
+    margin-bottom:10px!important;
 }
 
 #product-4786 {
