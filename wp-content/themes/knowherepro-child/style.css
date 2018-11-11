@@ -1124,10 +1124,6 @@ body .woocommerce a.button,
 body .woocommerce button.button, 
 body .woocommerce input.button { background: #f8a505 !important; color: #fff; font-weight: 500;   border-radius: 40px; }
 
-.attachment-woocommerce_thumbnail {
-  width:100px !important;
-}
-
 body .woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
   float: right;
   width: 100%;
