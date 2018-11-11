@@ -78,7 +78,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 						<td class="product-name" data-title="<?php esc_html_e('Product', 'knowherepro'); ?>">
 							<?php
-							$thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
+							$thumbnail = apply_filters('thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
 
 							if (!$product_permalink) {
 								echo $thumbnail;
