@@ -231,7 +231,7 @@ $description_author = get_the_author_meta('description');
 
 <?php get_footer(); ?>
 
-<?php goach_cron_function() ?>
+<?php /*goach_cron_function()*/ ?>
 
 <?php 
 global $wpdb;
