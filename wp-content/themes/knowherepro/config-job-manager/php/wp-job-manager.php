@@ -156,7 +156,7 @@ if ( !function_exists('knowhere_get_sort_filter') ) {
 
 if ( !function_exists('knowhere_get_google_maps_api_url') ) {
 	function knowhere_get_google_maps_api_url() {
-		$base = '//maps.googleapis.com/maps/api/js';
+		$base = '//maps.googleapis.com/maps/api/js#asyncload';
 
 		$args = array(
 			'language' => get_locale() ? substr( get_locale(), 0, 2 ) : '',
