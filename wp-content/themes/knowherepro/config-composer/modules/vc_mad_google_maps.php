@@ -9,7 +9,7 @@ if (!class_exists("knowhere_google_maps")) {
 		}
 
 		function google_map_script() {
-			wp_register_script( "googleapis", "https://maps.googleapis.com/maps/api/js?v=3.24", null, null, false );
+			wp_register_script( "googleapis", "https://maps.googleapis.com/maps/api/js?v=3.4#asyncload", null, null, false );
 		}
 
 		function add_map_google_maps(){
