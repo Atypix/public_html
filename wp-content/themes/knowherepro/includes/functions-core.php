@@ -884,7 +884,7 @@ if ( !function_exists('knowhere_maps_key_for_plugins') ) {
 
 		if ( strpos( $url, "maps.google.com/maps/api/js" ) !== false || strpos( $url, "maps.googleapis.com/maps/api/js" ) !== false ) {
 			if ( strpos( $url, "key=" ) === false ) {
-				$url = "https://maps.googleapis.com/maps/api/js?v=3.24";
+				$url = "https://maps.googleapis.com/maps/api/js?v=3.4#asyncload";
 				$url = esc_url( add_query_arg( 'key', $key, $url) );
 			}
 		}
